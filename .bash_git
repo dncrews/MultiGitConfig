@@ -8,6 +8,8 @@ gitset() {
 	if [ -r ~/.git/$1/.gitignore ]
 		then
 			ln -s ~/.git/$1/.gitignore ~/.gitignore
+	else
+		ln -s ~/.git/default/.gitignore ~/.gitignore
 	fi
 
 	if [ -r ~/.git/$1/.gitconfig ]

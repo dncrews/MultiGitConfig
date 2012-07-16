@@ -1,0 +1,8 @@
+# System artefacts
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editor
+*.sublime-project
+*.sublime-workspace
