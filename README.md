@@ -27,7 +27,7 @@ Then, inside your ~/.bashrc, add the following:
 
 <pre>
   if [ -f ~/.git/.bash_git ]; then
-    source ~/.bash_git
+    source ~/.git/.bash_git
   fi
 </pre>
 
