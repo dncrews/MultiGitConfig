@@ -13,14 +13,14 @@ and create any environment directories you want. If you had two main configurati
 
 <pre>
   ~/.git/.bash_git
-  ~/.git/default/.gitignore <--- Used if .gitignore not included in env
+  ~/.git/default/.gitignore # Used if .gitignore not included in env
 
   ~/.git/env1/
-  ~/.git/env1/.gitignore  <--- Optional
+  ~/.git/env1/.gitignore  # Optional
   ~/.git/env1/.gitconfig
 
   ~/.git/env2/
-  ~/.git/env2/.gitignore  <--- Optional
+  ~/.git/env2/.gitignore  # Optional
   ~/.git/env2/.gitconfig
 </pre>
 
