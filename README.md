@@ -9,17 +9,18 @@ Simply put this into
   ~/.git/
 </pre>
 
-and create any environment directories you want. If you had two main configurations you use, you'd create two directories laid out like this:
+and create any environment directories you want. If you had two main configurations you use, you'd create two directories, each with a .gitconfig and an optional .gitignore, laid out like this:
 
 <pre>
   ~/.git/.bash_git
+  ~/.git/default/.gitignore <--- Used if .gitignore not included in env
 
   ~/.git/env1/
-  ~/.git/env1/.gitignore
+  ~/.git/env1/.gitignore  <--- Optional
   ~/.git/env1/.gitconfig
 
   ~/.git/env2/
-  ~/.git/env2/.gitignore
+  ~/.git/env2/.gitignore  <--- Optional
   ~/.git/env2/.gitconfig
 </pre>
 

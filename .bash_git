@@ -3,18 +3,17 @@ gitset() {
 	if [ -d ~/.git/$1 ]
 		then
 			rm ~/.gitignore ~/.gitconfig
-	fi
+			if [ -r ~/.git/$1/.gitignore ]
+				then
+					ln -s ~/.git/$1/.gitignore ~/.gitignore
+			else
+				ln -s ~/.git/default/.gitignore ~/.gitignore
+			fi
 
-	if [ -r ~/.git/$1/.gitignore ]
-		then
-			ln -s ~/.git/$1/.gitignore ~/.gitignore
-	else
-		ln -s ~/.git/default/.gitignore ~/.gitignore
-	fi
-
-	if [ -r ~/.git/$1/.gitconfig ]
-		then
-			ln -s ~/.git/$1/.gitconfig ~/.gitconfig
+			if [ -r ~/.git/$1/.gitconfig ]
+				then
+					ln -s ~/.git/$1/.gitconfig ~/.gitconfig
+			fi
 	else
 		echo "Unknown Git Configuration"
 	fi
